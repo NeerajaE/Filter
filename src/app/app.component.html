@@ -1,0 +1,20 @@
+<h1>Here is the list of countries displayed in search field..</h1>
+<div class="content" role="main">
+  <div class="card">
+    <div class="form-group">
+    <label for="search-text">Enter region you want:</label>
+      <input type="text" class="form-control" id="search-text" aria-describedby="search-text"
+       [(ngModel)]="searchText"  placeholder="Enter any region" 
+      autofocus>
+</div>
+    <ul class="list-group list-group-flush">
+    
+  <li class="list-group-item" *ngFor="let c of countries | appFilter: searchText">
+    {{c}}
+      </li>
+    </ul>
+  </div>
+   </div>
+
+<p>This is a single page web applcation where it filters the region in search box .</p>
+

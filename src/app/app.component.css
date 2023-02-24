@@ -1,0 +1,10 @@
+.list-group-item{
+    color:rgb(11, 11, 58);
+}
+input{
+   color:blue
+}
+h1,p{
+    color:rgb(48, 43, 43);
+    font-family: sans-serif;
+}
